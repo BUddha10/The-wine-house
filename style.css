@@ -1,3 +1,4 @@
+/* global style */
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +8,13 @@
   list-style-type: none;
   font-family: "Cormorant Garamond", serif;
 }
+/* En of global style */
 
 html {
   font-size: 62.5%;
 }
 
+/* nabigation bar */
 .navbar {
   position: fixed;
   width: 100%;
@@ -61,7 +64,9 @@ html {
 .nav-link:hover::before {
   left: 110%;
 }
+/* End of navigation bar */
 
+/* page button */
 .page-btn {
   position: fixed;
   z-index: 100;
@@ -97,7 +102,9 @@ html {
 .page-btn img:hover {
   opacity: 1;
 }
+/* end of page button */
 
+/* progress bar */
 .progress-wrapper {
   position: fixed;
   z-index: 100;
@@ -105,7 +112,7 @@ html {
   left: 3rem;
 }
 
-.progress{
+.progress {
   text-align: center;
   margin: 1rem 0;
 }
@@ -127,6 +134,7 @@ html {
   border-radius: 50%;
   margin: 0 0.3rem;
 }
+/* end of progress bar */
 
 .wrapper {
   width: 100vw;
@@ -140,9 +148,12 @@ section {
   height: 100%;
   position: absolute;
   left: 0;
+  overflow: hidden;
+  transition: left 1.5s;
 }
 
-.section-5 {
+/* first section */
+.section-1 {
   z-index: 50;
 }
 
@@ -173,6 +184,12 @@ section {
   border-bottom: 0.2rem solid #d50000;
   text-align: right;
   user-select: none;
+}
+/* End of section 1 */
+
+/* Section 2 */
+.section-2 {
+  z-index: 40;
 }
 
 .section-2-wrapper {
@@ -220,6 +237,12 @@ section {
   opacity: 0.6;
   width: 80rem;
 }
+/* End of section 2 */
+
+/* Section 3 */
+.section-3 {
+  z-index: 30;
+}
 
 .section-3-wrapper {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
@@ -251,6 +274,12 @@ section {
   text-align: center;
   text-shadow: 0 0.5rem 1.5rem #000;
   user-select: none;
+}
+/* End of section 3 */
+
+/* Section 4 */
+.section-4 {
+  z-index: 20;
 }
 
 .section-4-wrapper {
@@ -285,6 +314,12 @@ section {
   border: 0.1rem solid #fff;
   padding: 1rem;
   opacity: 0.7;
+}
+/* End of section 4 */
+
+/* Section 5 */
+.section-5 {
+  z-index: 10;
 }
 
 .section-5-wrapper {
@@ -325,3 +360,4 @@ section {
   text-align: center;
   letter-spacing: 0.2rem;
 }
+/* End of section 5 */
